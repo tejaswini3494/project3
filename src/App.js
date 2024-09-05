@@ -1,23 +1,16 @@
-import logo from './logo.svg';
+
 import './App.css';
+// import Insrtuction from './componunts/leftSide/Insrtuction';
+import Insrtuction from './componunts/letSide/Insrtuction';
+// import BoxA from './componunts/rightSide/BoxA';
+import BoxCombine from './componunts/rightSide/BoxCombine';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex justify-between gap-10 p-5 bg-[#171717] ">
+     <Insrtuction/>
+     {/* <BoxA/> */}
+     <BoxCombine/>
     </div>
   );
 }
